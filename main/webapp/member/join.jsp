@@ -56,6 +56,26 @@
 						maxlength="20" name="userPwRe">
 				</div>
 			</div>
+			<!-- 전화번호 -->
+			<div class="form-group">
+				<div class="font-size-15 margin-bottom-3">
+					<fmt:message key="mobile" />
+				</div>
+				<div>
+					<input type="text" id="mobile" placeholder="전화번호를 입력해 주세요"
+						maxlength="20" name="mobile">
+				</div>
+			</div>
+			<!-- 생년월일 -->
+			<div class="form-group">
+				<div class="font-size-15 margin-bottom-3">
+					<fmt:message key="birth" />
+				</div>
+				<div>
+					<input type="password" id="joinPwRe" placeholder="비밀번호를 다시 입력해 주세요"
+						maxlength="20" name="userPwRe">
+				</div>
+			</div>
 			<!-- 성별 -->
 			<div class="form-group">
 				<div class="font-size-15 margin-bottom-3">

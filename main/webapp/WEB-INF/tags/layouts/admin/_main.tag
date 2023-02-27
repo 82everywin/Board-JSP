@@ -9,12 +9,9 @@
 <layout:common siteTitle="${siteTitle}">
 	<jsp:attribute name="header">
 		<section id="site_top">
-		
-			<!-- 
 			<div class="left">
 				<a href="<c:url value='/'/>">HOME페이지로 이동!  </a>
 			</div>
-			 -->
 			<div class="right">
 			<%-- 로그인 성공했을 시에만!  --%>
 			<c:if test="${isLogin}">
@@ -25,12 +22,10 @@
 			</c:if>
 			</div>
 		</section>
-		<!-- 
-		<h1>로고</h1>
-		 -->
+		<h1>헤더</h1>
 	</jsp:attribute>
 	<jsp:attribute name="footer">
-		
+		<h1>푸터</h1>
 	</jsp:attribute>
 	<jsp:body>
 		<jsp:doBody/>
