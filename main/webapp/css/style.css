@@ -4,6 +4,13 @@
 	padding : 0;
 	margin : 0;
 }
+<<<<<<< HEAD
+=======
+main{
+	overflow : auto;
+}
+
+>>>>>>> b784b7dea644576cdb193e00df55dc8ecb954037
 
 /* 
 body{
@@ -34,25 +41,58 @@ input[type=text]{
 	padding : 8px;
 	border : 1px solid #ddd;
 }
+<<<<<<< HEAD
+=======
+input[type=password]{
+	width : 90%;
+	padding : 8px;
+	border : 1px solid #ddd;
+}
+>>>>>>> b784b7dea644576cdb193e00df55dc8ecb954037
 .btn-group button{
 	float : left;
 	width : 50%;
 	padding : 8px;
+<<<<<<< HEAD
+=======
+	border : 1px solid #000;
+>>>>>>> b784b7dea644576cdb193e00df55dc8ecb954037
 }
 .btn-group::after{
 	content : "";
 	display : block;
 	clear : both;
 }
+<<<<<<< HEAD
 
 
 /* 회원가입 */
 .joinbox{
 	position : fixed;
+=======
+.font-size-15{
+	font-size : 15px;
+}
+.margin-bottom-10{
+	margin-bottom : 10px;
+}
+select{
+	width : 130px;
+}
+
+
+/* 회원가입 */
+
+.joinbox{
+	position : relative;
+	padding-top : 50px;
+	padding-bottom : 50px;
+>>>>>>> b784b7dea644576cdb193e00df55dc8ecb954037
 	top : 0;
 	left : 0;
 	width : 100%;
 	height : 100%;
+<<<<<<< HEAD
 	background-color : #ddd;
 	display : none;
 }
@@ -60,12 +100,26 @@ input[type=text]{
 	background-color : #fff;
 	width : 400px;
 	margin : 100px auto 0;
+=======
+	background-color : #b0e0e6;
+	
+}
+
+.join-content{
+	background-color : #fff;
+	width : 400px;
+	margin : auto;
+>>>>>>> b784b7dea644576cdb193e00df55dc8ecb954037
 	padding : 10px;
 	position : relative;
 }
 .join-content h2{
 	width : 100%;
+<<<<<<< HEAD
 	height : 100px;
+=======
+	height : 80px;
+>>>>>>> b784b7dea644576cdb193e00df55dc8ecb954037
 	line-height : 100px;
 	text-align : center;
 	font-size : 20px;

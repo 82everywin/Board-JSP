@@ -7,62 +7,25 @@
 <%@ attribute name="siteTitle" %>
 <fmt:setBundle basename="messages.common"/>
 <layout:common siteTitle="${siteTitle}">
-<<<<<<< HEAD
-
 	<jsp:attribute name="header">
 		<section id="site_top">
-			<div class="left">
-				<a href="<c:url value='/index.jsp'/>">HOME페이지로 이동!  </a>
-			</div>
-			<div class="right">
-			<%-- 로그인 성공했을 시에만! header에 노출 됨   --%>
-				<c:if test="${isLogin}">
-=======
-	<jsp:attribute name="header">
-		<section id="site_top">
-		
-			<!-- 
 			<div class="left">
 				<a href="<c:url value='/'/>">HOME페이지로 이동!  </a>
 			</div>
-			 -->
 			<div class="right">
 			<%-- 로그인 성공했을 시에만!  --%>
 			<c:if test="${isLogin}">
->>>>>>> b784b7dea644576cdb193e00df55dc8ecb954037
 				<fmt:message key="member.login.status">
 					<fmt:param value="${sessionScope.member.userNm }"/>
 					<fmt:param value="${sessionScope.member.userId }"/>
 				</fmt:message>
-<<<<<<< HEAD
-					<%--마이페이지로 이동 --%>
-					<a href="<c:url value="/member/mypages"/>">
-						<fmt:message key="member.mypages"/>
-					</a>
-				
-					<%--로그아웃 --%>
-					<a href="<c:url value="/memver/logout"/>">
-						<fmt:message key="member.logout"/>
-					</a>
-				</c:if>
-			
+			</c:if>
 			</div>
 		</section>
 		<h1>헤더</h1>
 	</jsp:attribute>
 	<jsp:attribute name="footer">
 		<h1>푸터</h1>
-=======
-			</c:if>
-			</div>
-		</section>
-		<!-- 
-		<h1>로고</h1>
-		 -->
-	</jsp:attribute>
-	<jsp:attribute name="footer">
-		
->>>>>>> b784b7dea644576cdb193e00df55dc8ecb954037
 	</jsp:attribute>
 	<jsp:body>
 		<jsp:doBody/>

@@ -34,8 +34,11 @@ public class MessageLibrary {
 		}
 	}
 	
+<<<<<<< HEAD
 	
 	
+=======
+>>>>>>> b784b7dea644576cdb193e00df55dc8ecb954037
 	/**
 	 * 현재 페이지(target)에서 넘어갈 페이지(url) 
 	 * 
@@ -50,7 +53,11 @@ public class MessageLibrary {
 			PrintWriter out=response.getWriter();
 			
 			target=target==null?"self":target;
+<<<<<<< HEAD
 			out.printf("<script>%s.location.replace('%s');</script>",target,url);
+=======
+			out.printf("<script>%s.location.replace(%s);</script>",target,url);
+>>>>>>> b784b7dea644576cdb193e00df55dc8ecb954037
 		}catch(Exception e1) {
 			e1.printStackTrace();
 		}
