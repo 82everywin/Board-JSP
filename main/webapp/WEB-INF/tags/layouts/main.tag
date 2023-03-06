@@ -7,19 +7,30 @@
 <%@ attribute name="siteTitle" %>
 <fmt:setBundle basename="messages.common"/>
 <layout:common siteTitle="${siteTitle}">
+
 	<jsp:attribute name="header">
 		<section id="site_top">
 			<div class="left">
-				<a href="<c:url value='/'/>">HOME페이지로 이동!  </a>
+				<a href="<c:url value='/index.jsp'/>">HOME페이지로 이동!  </a>
 			</div>
 			<div class="right">
-			<%-- 로그인 성공했을 시에만!  --%>
-			<c:if test="${isLogin}">
+			<%-- 로그인 성공했을 시에만! header에 노출 됨   --%>
+				<c:if test="${isLogin}">
 				<fmt:message key="member.login.status">
 					<fmt:param value="${sessionScope.member.userNm }"/>
 					<fmt:param value="${sessionScope.member.userId }"/>
 				</fmt:message>
-			</c:if>
+					<%--마이페이지로 이동 --%>
+					<a href="<c:url value="/member/mypages"/>">
+						<fmt:message key="member.mypages"/>
+					</a>
+				
+					<%--로그아웃 --%>
+					<a href="<c:url value="/memver/logout"/>">
+						<fmt:message key="member.logout"/>
+					</a>
+				</c:if>
+			
 			</div>
 		</section>
 		<h1>헤더</h1>

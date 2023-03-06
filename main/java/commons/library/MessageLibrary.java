@@ -34,6 +34,8 @@ public class MessageLibrary {
 		}
 	}
 	
+	
+	
 	/**
 	 * 현재 페이지(target)에서 넘어갈 페이지(url) 
 	 * 
@@ -48,7 +50,7 @@ public class MessageLibrary {
 			PrintWriter out=response.getWriter();
 			
 			target=target==null?"self":target;
-			out.printf("<script>%s.location.replace(%s);</script>",target,url);
+			out.printf("<script>%s.location.replace('%s');</script>",target,url);
 		}catch(Exception e1) {
 			e1.printStackTrace();
 		}

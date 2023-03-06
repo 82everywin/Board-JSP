@@ -33,7 +33,7 @@ public class MemberLoginController extends HttpServlet {
 		loginservice.dologin(req,resp);
 		
 		// 로그인 성공시 -> 메인페이지 (만들면 추가할 예정)
-		go(resp,UrlLibrary.getURL(req,null), "parent");
+		go(resp,UrlLibrary.getURL(req,"/index.jsp"), "parent");
 		
 		}catch(Exception e) {
 			e.printStackTrace();
