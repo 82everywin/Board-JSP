@@ -34,7 +34,7 @@ public class MemberLoginController extends HttpServlet {
 		
 		// 로그인 성공시 -> 메인페이지 (만들면 추가할 예정)
 // HEAD
-		go(resp,UrlLibrary.getURL(req,"/index.jsp"), "parent");
+		go(resp,UrlLibrary.getURL(req,"/main"), "parent");
 
 		go(resp,UrlLibrary.getURL(req,null), "parent");
 // b784b7dea644576cdb193e00df55dc8ecb954037

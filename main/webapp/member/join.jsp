@@ -2,7 +2,7 @@
 <%@ taglib prefix="layout" tagdir="/WEB-INF/tags/layouts"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-
+<%@ taglib prefix="html"  tagdir="/WEB-INF/tags/html" %>
 <fmt:setBundle basename="messages.common" />
 
 <fmt:message var="title" key="member.jointitle" />
@@ -72,8 +72,15 @@
 					<fmt:message key="birth" />
 				</div>
 				<div>
-					<input type="password" id="joinPwRe" placeholder="월"
-						maxlength="20" name="userPwRe">
+					<input type="text"  id="birth_yy" placeholder="년도(4자)"
+						maxlength="4" name="birth_yy">
+				</div>
+				<div>
+					<html:selectNum start="1" end="12"  name="birth_mm" label="월" />
+				</div>
+				<div>
+					<input type="text"  id="birth_dd" placeholder="일"
+						maxlength="2" name="birth_dd">
 				</div>
 			</div>
 			<!-- 성별 -->
