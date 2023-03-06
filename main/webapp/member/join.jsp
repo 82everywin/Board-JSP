@@ -18,7 +18,7 @@
 
 			<!-- 이름(회원명)-->
 			<div class="form-group">
-				<div class="font-size-15 margin-bottom-3">
+				<div class="font-size-15 margin-bottom-10">
 					<fmt:message key="userNm" />
 				</div>
 				<div>
@@ -28,7 +28,7 @@
 			</div>
 			<!-- 아이디 -->
 			<div class="form-group">
-				<div class="font-size-15 margin-bottom-3">
+				<div class="font-size-15 margin-bottom-10">
 					<fmt:message key="userId" />
 				</div>
 				<div>
@@ -38,7 +38,7 @@
 			</div>
 			<!-- 비밀번호 -->
 			<div class="form-group">
-				<div class="font-size-15 margin-bottom-3">
+				<div class="font-size-15 margin-bottom-10">
 					<fmt:message key="userPw" />
 				</div>
 				<div>
@@ -48,7 +48,7 @@
 			</div>
 			<!-- 비밀번호 재확인  -->
 			<div class="form-group">
-				<div class="font-size-15 margin-bottom-3">
+				<div class="font-size-15 margin-bottom-10">
 					<fmt:message key="userPwRe" />
 				</div>
 				<div>
@@ -58,7 +58,7 @@
 			</div>
 			<!-- 전화번호 -->
 			<div class="form-group">
-				<div class="font-size-15 margin-bottom-3">
+				<div class="font-size-15 margin-bottom-10">
 					<fmt:message key="mobile" />
 				</div>
 				<div>
@@ -68,17 +68,17 @@
 			</div>
 			<!-- 생년월일 -->
 			<div class="form-group">
-				<div class="font-size-15 margin-bottom-3">
+				<div class="font-size-15 margin-bottom-10">
 					<fmt:message key="birth" />
 				</div>
 				<div>
-					<input type="password" id="joinPwRe" placeholder="비밀번호를 다시 입력해 주세요"
+					<input type="password" id="joinPwRe" placeholder="월"
 						maxlength="20" name="userPwRe">
 				</div>
 			</div>
 			<!-- 성별 -->
 			<div class="form-group">
-				<div class="font-size-15 margin-bottom-3">
+				<div class="font-size-15 margin-bottom-10">
 					<fmt:message key="gender" />
 				</div>
 				<div>
@@ -105,8 +105,8 @@
 			
 			<!-- 회원가입 버튼 -->
 			<div class="form-group btn-group">
-				<button style="background-color : #d3d3d3;">취소</button>
-				<button type="submit" style="background-color : #fff5ee;">
+				<button style="background-color : #ffa07a;">취소</button>
+				<button type="submit" style="background-color : #87ceeb;">
 					<fmt:message key="member.join"/>				
 				</button>
 			</div>
