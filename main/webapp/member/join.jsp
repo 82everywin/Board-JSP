@@ -21,7 +21,7 @@
 				<div class="font-size-15 margin-bottom-10">
 					<fmt:message key="userNm" />
 				</div>
-				<div>
+				<div class="user-box">
 					<input type="text" id="joinNm" placeholder="이름을 입력해 주세요"
 						maxlength="20" name="userNm">
 				</div>
@@ -31,7 +31,7 @@
 				<div class="font-size-15 margin-bottom-10">
 					<fmt:message key="userId" />
 				</div>
-				<div>
+				<div class="user-box">
 					<input type="text" id="joinId" placeholder="아이디를 입력해 주세요"
 						maxlength="20" name="userId">
 				</div>
@@ -41,7 +41,7 @@
 				<div class="font-size-15 margin-bottom-10">
 					<fmt:message key="userPw" />
 				</div>
-				<div>
+				<div class="user-box">
 					<input type="password" id="joinPw" placeholder="비밀번호를 입력해 주세요"
 						maxlength="20" name="userPw">
 				</div>
@@ -51,7 +51,7 @@
 				<div class="font-size-15 margin-bottom-10">
 					<fmt:message key="userPwRe" />
 				</div>
-				<div>
+				<div class="user-box">
 					<input type="password" id="joinPwRe" placeholder="비밀번호를 다시 입력해 주세요"
 						maxlength="20" name="userPwRe">
 				</div>
@@ -61,7 +61,7 @@
 				<div class="font-size-15 margin-bottom-10">
 					<fmt:message key="mobile" />
 				</div>
-				<div>
+				<div class="user-box">
 					<input type="text" id="mobile" placeholder="전화번호를 입력해 주세요"
 						maxlength="20" name="mobile">
 				</div>
@@ -71,16 +71,18 @@
 				<div class="font-size-15 margin-bottom-10">
 					<fmt:message key="birth" />
 				</div>
-				<div>
+				<div id="birth_box">
+					<span>
 					<input type="text"  id="birth_yy" placeholder="년도(4자)"
 						maxlength="4" name="birth_yy">
-				</div>
-				<div>
-					<html:selectNum start="1" end="12"  name="birth_mm" label="월" />
-				</div>
-				<div>
-					<input type="text"  id="birth_dd" placeholder="일"
-						maxlength="2" name="birth_dd">
+					</span>
+					<span>
+						<html:selectNum start="1" end="12"  name="birth_mm" label="월" />
+					</span>
+					<span>
+						<input type="text"  id="birth_dd" placeholder="일"
+							maxlength="2" name="birth_dd">
+					</span>
 				</div>
 			</div>
 			<!-- 성별 -->
@@ -89,7 +91,7 @@
 					<fmt:message key="gender" />
 				</div>
 				<div>
-					<select name="<fmt:message key="gender"/>">
+					<select name="<fmt:message key="gender"/>" class="option_box">
 						<option value="<fmt:message key="man"/>">
 							<fmt:message key="man" />
 						</option>
@@ -113,7 +115,7 @@
 			<!-- 회원가입 버튼 -->
 			<div class="form-group btn-group">
 				<button style="background-color : #ffa07a;">취소</button>
-				<button type="submit" style="background-color : #87ceeb;">
+				<button type="submit" style="background-color : #87ceeb; padding-left:10px; ">
 					<fmt:message key="member.join"/>				
 				</button>
 			</div>
