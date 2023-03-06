@@ -15,13 +15,10 @@
 		<c:if test=" ${!empty siteTitle }">
 			<title>${siteTitle }</title>
 		</c:if>
-<<<<<<< HEAD
-=======
 		<!-- 스크롤바 만들기 -->
 		<!-- 
 		<meta name="veiwport" content="width=device-width,user-scalable=yes, initial-scale=1,minimum-scale=1,maximum-scale=3">
 		 -->
->>>>>>> b784b7dea644576cdb193e00df55dc8ecb954037
 		<%--css 참고~ --%>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 		<link rel="stylesheet" type="text/css" href="${commonCss}">
@@ -49,9 +46,5 @@
 		<footer>
 			<jsp:invoke fragment="footer"/>
 		</footer>
-<<<<<<< HEAD
-		
-=======
->>>>>>> b784b7dea644576cdb193e00df55dc8ecb954037
 	</body>
 </html>
